@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Chakma&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+ :root{
+    
+    --couleur3:#880d1e;
+    --couleur2:#ff2828;
+    --couleur:#110d23;
+    --couleur-cat-back:#dd2d4a  ;
+    --couleur-cat:#000000 ;
+    --font-family-h1:'anton',sens-serif;
+    --font-family-h2:'inter',sens-serif;
+    --font-size-h1:clamp(2.5rem ,6vw , 4.5rem);
+    --font-size-h2:1.25rem;
+    --cta-padding-start: 12px 30px;
+    --cta-border:2px solid #fff;
+    --cta-border-raduis:8px;
+    --color:#f7f7f7;
+    --moz-background:#f5e0ef ;
+    --gap:1.5rem ;
+    --border:1px solid #e2e8f0s ;
+    --padding:2rem ;
+    --magin-bottom: 1rem ;
+    --op:1 ;
+    --font:14px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    color: var(--couleur-cat);
+    line-height: 1.6;
+    font-size: var(--font);
+}
