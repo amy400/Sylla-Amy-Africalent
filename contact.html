@@ -8,16 +8,18 @@
        <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header  class="navbar navbar-expand-lg bg-body-tertiary">
+    <header  class="navbar navbar-expand-lg bg">
          <div class="container-fluid">
             <a class="navbar-brand" href="#"> <img src="image/logo1.jpg" class="navbar-brand" alt="logo1" width="50px"> AfriTalent</a>
-   
-       
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        
         <div class="collapse navbar-collapse" id="navbarNavDropdown" >
       <ul class="navbar-nav">
         <li class="nav-item">
 
-        <a  class="nav-link active" aria-current="page" href="index.html">Acceuil</a> 
+        <a  class="nav-link " aria-current="page" href="index.html">Acceuil</a> 
         </li> 
         <li class="nav-item">  
         <a class="nav-link"  href="freelances.html">Freelance</a>
@@ -38,7 +40,7 @@
    
   </div>
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-         <button ><i class="bi bi-brightness-high-fill"></i></button>
+         <button id="btn" ><i class="bi bi-brightness-high-fill"></i></button>
       <a href="index.html" class="CTA-btn" type="button">REJOINDRE</a>
        </div>
      </div>
@@ -63,19 +65,19 @@
                       <div class="col-12 col-md-6">
                         <div class="mb-3">
                        <label for="nom"  class="form-label">Nom</label>
-                       <input type="text" class="form-control " id="">
+                       <input type="text" class="form-control " id="coleur">
                        </div>
                       </div>
                        <div class="col-12 col-md-6">
                         <div class="mb-3">
                           <label for="prénom"  class="form-label">Prénom</label>
-                          <input type="text"class="form-control" id="" >
+                          <input type="text"class="form-control" id="coleur" >
                          </div>
                       </div>
                       </div>
                         <div class="form">
                         <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4"> 
+                        <input type="email" class="form-control" id="coleur"> 
                       </div>
                <div class=" form-group-af">
              <label for="inputState" class="form-label"> Sujet</label>
@@ -91,7 +93,7 @@
             </div>
             <div class="form-group-af">
                 <label for="message"  class="form-label">Message</label>
-                <textarea name="" id="" rows="4" placeholder="votre message (min.20 caractéres)" class="form-control"></textarea>
+                <textarea name="" id="coleur" rows="4" placeholder="votre message (min.20 caractéres)" class="form-control" ></textarea>
             </div>
               <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -176,6 +178,7 @@
            <p>&copy; 2026 Afritalaent . Tous droits reserves</p>
           </div>
     </footer>
+     <BUtton class="back-to-top" id="backtotop" aria-label="retour en haut"><i class="bi bi-arrow-up"></i></BUtton>
     <script src="bootstrap5/bootstrap-5.3.8-dist/bootstrap-5/js/bootstrap.bundle.js"></script>
     <script src="js/main.js"></script>
 </body>
