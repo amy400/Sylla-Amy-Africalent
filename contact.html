@@ -65,23 +65,27 @@
                       <div class="col-12 col-md-6">
                         <div class="mb-3">
                        <label for="nom"  class="form-label">Nom</label>
-                       <input type="text" class="form-control " id="coleur">
+                       <input type="text" class="form-control  coleur" id="nom" required>
+                       <div class="invalid-feedback">Veillez renseigner votre nom </div>
+
                        </div>
                       </div>
                        <div class="col-12 col-md-6">
                         <div class="mb-3">
                           <label for="prénom"  class="form-label">Prénom</label>
-                          <input type="text"class="form-control" id="coleur" >
+                          <input type="text"class="form-control coleur" id="prenom" required>
+                          <div class="invalid-feedback">Veillez renseigner votre prenom </div>
                          </div>
                       </div>
-                      </div>
-                        <div class="form">
+                    </div>
+                        <div class="mb-3">
                         <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="coleur"> 
+                        <input type="email" class="form-control coleur" id="inputEmail4" required>
+                         <div class="invalid-feedback" id="emailError">Veillez saisir une adresse email valide  </div>
                       </div>
-               <div class=" form-group-af">
+               <div class=" form-group-af mb-3">
              <label for="inputState" class="form-label"> Sujet</label>
-            <select name="sujet" id="inputState" class="form-select">
+            <select name="sujet" id="inputState" class="form-select" required>
             <option selected>choisir un sujet</option>
             <option value="web">Développement Web</option>
              <option value="">Design UI/UX</option>
@@ -93,13 +97,15 @@
             </div>
             <div class="form-group-af">
                 <label for="message"  class="form-label">Message</label>
-                <textarea name="" id="coleur" rows="4" placeholder="votre message (min.20 caractéres)" class="form-control" ></textarea>
+                <textarea name="message"   id="message" rows="4" placeholder="votre message (min.20 caractéres)" class="form-control coleur" required ></textarea>
+                 <div class="invalid-feedback" id="messageError"> votre message doit contenir au moins 20 Caractéres .</div>
             </div>
               <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck">
               <label class="form-check-label" for="gridCheck">
               Check me out
             </label>
+            <div class="invalid-feedback">vous devez accepter les conditions pour continuer </div>
             </div>
            
         <div class="col-12">
@@ -107,7 +113,7 @@
         </form>
          </div>
          </div>
-    <div> merci ! votre message a été envoyé avec succés à l équipe Afritalent.</div>
+    <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert"> merci ! votre message a été envoyé avec succés à l équipe Afritalent.</div>
 </div>
     <div class="">
         <div class="">

@@ -21,7 +21,7 @@
     --moz-background:#e1e1e1 ;
     --gap:1.5rem ;
     --border:1px solid #131313 ;
-    --padding:2rem ;
+    --padding:4rem ;
     --magin-bottom: 1rem ;
     --op:1 ;
     --font:14px;
@@ -51,7 +51,7 @@ body{
     box-shadow: none;
     transition: padding .3s ease, background-color 0.3 s ease , box-shadow 0.3 ease;
 }
-.navbar.scrolled{
+.navbar.show{
     padding: 5px 0;
     background-color: rgba(245, 245, 245, 0.95);
     box-shadow:0 4px 15px rgba(0,0,0, .04) ;
@@ -80,6 +80,17 @@ body{
     .text{
     color:var(--couleur-cat-back);
     font-size: 7rem;
+}
+.scrolled-brand{
+    opacity: 0;
+    transform: translateY(40px);
+    display: inline-block;
+    transition: opacity 1s ease-out, transfrom 1s ease-out ;
+    will-change: opacity, transform;
+}
+.scrolled-brand.is-visible{
+       opacity: 1;
+        transform: translateY(0);
 }
 .gradient-text{
     display: block;
@@ -128,10 +139,16 @@ body{
      border-color: var(--couleur-cat);
 }
 .illustration{
-    margin-top: var(--font-size);
+    margin-top: 100px;
     display: flex;
-    font-size: 50px;
-    gap: 10%;
+    font-size: 30px;
+    gap: 20%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    will-change: opacity; /* optimisation des performance de r*/
+}
+.illustration.is-visible{
+    opacity: 1;
 }
 
 .hero-img {
@@ -241,12 +258,20 @@ body{
         border-radius: 30px;
         padding: var(--padding) ;
         position: relative;
-        transition: all .3s ease-in-out;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         text-align: center;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+}
+.fades{
+        opacity: 0;
+        transform:translateY(50px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fades.show{
+    opacity: 1;
+     transform:translateY(0px);
 }
 .page-hero {
   padding-top: calc(var(--space1) + var(--space));
@@ -633,7 +658,7 @@ body.dark-mode-acceuil .search-bar{
 body.dark-mode-acceuil .search-input{
     color: var(--text);
 }
-body.dark-mode-acceuil #coleur{
+body.dark-mode-acceuil .coleur{
     color: var(--text);
 }
 body.dark-mode-acceuil .form-control{
