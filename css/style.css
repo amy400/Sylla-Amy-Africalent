@@ -424,7 +424,6 @@ body{
 
 }
 
-
 .CTA-btn1{
     display: flex;
     justify-content: center;
@@ -434,6 +433,21 @@ body{
     border-radius: 15px;
     font-weight:600 ;
     transition: .3s;
+}
+.CTA-btn1.btn-success-state {
+  background-color: #28a745 ;
+  border-color: #28a745 ;
+  color: #fff;
+}
+
+.CTA-btn1.btn-error-state {
+  background-color: #dc3545 ;
+  border-color: #dc3545 ;
+  color: #fff;
+}
+
+.CTA-btn1 {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .action{

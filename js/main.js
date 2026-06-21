@@ -149,4 +149,173 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 // Filtrage par categories
+function initFreelanceFilter() {
+  const bts = document.querySelectorAll('.bt') ;
+  const cards = document.querySelectorAll('.col');
 
+  if (!bts.length || !cards.length) return;
+
+  bts.forEach(bt => {
+    bt.addEventListener('click', () => {
+      bts.forEach(c => c.classList.remove('active'));
+      bt.classList.add('active');
+
+      const filter = bt.dataset.filter;
+      cards.forEach(col => {
+        const card = col.querySelector('.card');
+        if(!card) return;
+
+        const cardCategory = card.dataset.category;
+        const show = filter === 'all' || card.dataset.category === filter;
+        col.style.display =  '' ;
+
+        if (show) {
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.96)';
+          
+
+          card.offsetHeight;
+
+          card.style.transition = 'opacity 0.3s ease , transform 0.3s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'scale(1)';
+        
+        }
+        else{
+          col.style.display = 'none';
+        }
+      })
+    })
+  })
+}
+document.addEventListener('DOMContentLoaded', initFreelanceFilter);
+
+
+//FORMULAIRE DE CONTACT 
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contact-form');
+  const successMessage = document.getElementById('successMessage');
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  const nom = document.getElementById('nom');
+  const prenom = document.getElementById('prenom');
+  const email = document.getElementById('inputEmail4');
+  const sujet = document.getElementById('inputState');
+  const message = document.getElementById('message');
+  const check = document.getElementById('gridCheck');
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  function setValid(input) {
+    input.classList.remove('is-invalid');
+    input.classList.add('is-valid');
+  }
+
+  function setInvalid(input) {
+    input.classList.remove('is-valid');
+    input.classList.add('is-invalid');
+  }
+
+  function validateNom() {
+    if (!nom.value.trim()) {
+      setInvalid(nom);
+      return false;
+    }
+    setValid(nom);
+    return true;
+  }
+
+  function validatePrenom() {
+    if (!prenom.value.trim()) {
+      setInvalid(prenom);
+      return false;
+    }
+    setValid(prenom);
+    return true;
+  }
+
+  function validateEmail() {
+    const value = email.value.trim();
+    if (!value || !emailRegex.test(value)) {
+      setInvalid(email);
+      return false;
+    }
+    setValid(email);
+    return true;
+  }
+
+  function validateSujet() {
+    if (sujet.value =="choisir un sujet") {
+      setInvalid(sujet);
+      return false;
+    }
+    setValid(sujet);
+    return true;
+  }
+
+  function validateMessage() {
+    const value = message.value.trim();
+    if (value.length < 20) {
+      setInvalid(message);
+      return false;
+    }
+    setValid(message);
+    return true;
+  }
+
+  function validateCheck() {
+    if (!check.checked) {
+      setInvalid(check);
+      return false;
+    }
+    setValid(check);
+    return true;
+  }
+
+  // Validation en temps réel
+  nom.addEventListener('blur', validateNom);
+  prenom.addEventListener('blur', validatePrenom);
+  email.addEventListener('blur', validateEmail);
+  sujet.addEventListener('change', validateSujet);
+  message.addEventListener('blur', validateMessage);
+  check.addEventListener('change', validateCheck);
+
+  // Soumission du formulaire
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const checks = [
+      validateNom(),
+      validatePrenom(),
+      validateEmail(),
+      validateSujet(),
+      validateMessage(),
+      validateCheck(),
+    ];
+
+    const isFormValid = checks.every(Boolean);
+
+    // Réinitialise les classes de couleur du bouton avant chaque tentative
+    submitBtn.classList.remove('btn-success-state', 'btn-error-state');
+
+    if (isFormValid) {
+      successMessage.classList.remove('d-none');
+      submitBtn.classList.add('btn-success-state');
+
+      form.reset();
+      form.querySelectorAll('.is-valid').forEach(el => el.classList.remove('is-valid'));
+
+      setTimeout(() => {
+        successMessage.classList.add('d-none');
+        submitBtn.classList.remove('btn-success-state');
+      }, 5000);
+    } else {
+      successMessage.classList.add('d-none');
+      submitBtn.classList.add('btn-error-state');
+
+      setTimeout(() => {
+        submitBtn.classList.remove('btn-error-state');
+      }, 3000);
+    }
+  });
+});
