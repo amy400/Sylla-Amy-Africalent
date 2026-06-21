@@ -1,191 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afritalent</title>
-    <link rel="stylesheet" href="bootstrap5/bootstrap-5.3.8-dist/bootstrap-5/css/bootstrap.css">
-       <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afritalent</title>
+  <link rel="stylesheet" href="bootstrap5/bootstrap-5.3.8-dist/bootstrap-5/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header  class="navbar navbar-expand-lg bg">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="#"> <img src="image/logo1.jpg" class="navbar-brand" alt="logo1" width="50px"> AfriTalent</a>
-                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        
-        <div class="collapse navbar-collapse" id="navbarNavDropdown" >
-      <ul class="navbar-nav">
-        <li class="nav-item">
+  <header class="navbar navbar-expand-lg bg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="image/logo1.jpg" class="navbar-brand im" alt="logo1">
+        AfriTalent</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <a  class="nav-link " aria-current="page" href="index.html">Acceuil</a> 
-        </li> 
-        <li class="nav-item">  
-        <a class="nav-link"  href="freelances.html">Freelance</a>
-         </li>
-        <li class="nav-item">
-        <a href="tarifs.html" class="nav-link" >Tarifs</a> 
-         </li>
-        <li class="nav-item">
-       <a href="about.html" class="nav-link" >A propos</a>
-        </li>
-        <li class="nav-item">
-       <a href="#" class="nav-link" >Blog</a>
-        </li>
-     <li class="nav-item">
-    <a href="contact.html" class="nav-link ">Contact</a>
-   </li>
-   </ul>
-   
-  </div>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-         <button id="btn" ><i class="bi bi-brightness-high-fill"></i></button>
-      <a href="index.html" class="CTA-btn" type="button">REJOINDRE</a>
-       </div>
-     </div>
-  </header> 
-   <!-- PAGE HERO -->
-    <section class="page-hero">
-      <div class="container">
-        <span class="page-hero-p">Réponse sous 24h</span>
-        <h1>Contactez-nous</h1>
-        <p>Une question, un projet, un partenariat ? Notre équipe est là pour vous répondre.</p>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+
+            <a class="nav-link " aria-current="page" href="index.html">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="freelances.html">Freelance</a>
+          </li>
+          <li class="nav-item">
+            <a href="tarifs.html" class="nav-link">Tarifs</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link ">Contact</a>
+          </li>
+        </ul>
+
       </div>
-    </section>
-            <section class=""> 
-               <div class="section-form ">
-            <!--formulaire de contact-->
-            <div class="col-12">
-               <h2 class="police-h2 ">Remplir leur coordonnée</h2>  
-                <div class=" form rem">
-                  <!--form-->
-                  <form class="contac-form " id="contact-form">
-                    <div class="row g-3">
-                      <div class="col-12 col-md-6">
-                        <div class="mb-3">
-                       <label for="nom"  class="form-label">Nom</label>
-                       <input type="text" class="form-control  coleur" id="nom" required>
-                       <div class="invalid-feedback" id="error-nom">Veillez renseigner votre nom </div>
-
-                       </div>
-                      </div>
-                       <div class="col-12 col-md-6">
-                        <div class="mb-3">
-                          <label for="prénom"  class="form-label">Prénom</label>
-                          <input type="text"class="form-control coleur" id="prenom" required>
-                          <div class="invalid-feedback" id="error-nom">Veillez renseigner votre prenom </div>
-                         </div>
-                      </div>
-                    </div>
-                        <div class="mb-3">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control coleur" id="inputEmail4" required>
-                         <div class="invalid-feedback" id="error-email">Veillez saisir une adresse email valide  </div>
-                      </div>
-               <div class=" form-group-af mb-3">
-             <label for="inputState" class="form-label"> Sujet</label>
-            <select name="sujet" id="inputState" class="form-select" required>
-            <option selected>choisir un sujet</option>
-            <option value="web">Développement Web</option>
-             <option value="web">Design UI/UX</option>
-            <option value="web">Marketing Digital </option>
-            <option value="web">Data& IA</option>
-            <option value="Tech"> Rédaction Tech</option>
-             <option value="Cloud"> DevOps & Cloud</option>
-            </select>
-            </div>
-            <div class="form-group-af">
-                <label for="message"  class="form-label">Message</label>
-                <textarea name="message"   id="message" rows="4" placeholder="votre message (min.20 caractéres)" class="form-control coleur" required ></textarea>
-                 <div class="invalid-feedback" id="message-error"> votre message doit contenir au moins 20 Caractéres .</div>
-            </div>
-              <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-            <div class="invalid-feedback">vous devez accepter les conditions pour continuer </div>
-            </div>
-        <div class="col-12">
-            <button type="submit" class="btn  CTA-btn1">Envoyer</button>
-        </form>
-         </div>
-         </div>
-    <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert"> merci ! votre message a été envoyé avec succés à l équipe Afritalent.</div>
-</div>
-    <div class="">
-        <div class="">
-            <h3 class="police-h2">
-                Nos bureau
-            </h3>
-            <div class="rem">
-            <div class="">
-             <div> <i class="bi bi-geo-alt icon"></i>
-                   <p class=""> Dakar , Pikine rue 54</p>
-                                 <p>Dakar,Fass</p>
-                                 <p>Thies </p></div>
-              <div> <i class="bi bi-telephone-fill icon"></i>
-                       <p class="">+221 33 491 00 00 </p>
-                         <p>+221 77 800 00 00 </p>
-                         <p>+221 77 700 00 00 </p></div>
-           <div><i class="bi bi-envelope-at icon"></i>
-            <p class="">hello521@Afritalent.com</p>
-            <p>hello534@Afritalent.com</p>
-            <p>hello501@Afritalent.com</p></div>
-        </div>
-        </div>
-        <!--google maps iframe-->
-    </section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30866.58725955767!2d-17.3951428!3d14.750800699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2ssn!4v1781741313905!5m2!1sfr!2ssn" width="2000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <footer class=" footer">
-      <div class=" container">
-        <div class=" footer1">
-          <!--clonne 1: AfriTalent -->
-          <div class="col-12 ">
-            <a class="navbar-brand" href="#"> <img src="image/logo1.jpg" class="navbar-brand" alt="logo1" width="50px"> AfriTalent</a>
-            <p class="hero-h2">La premiere plateforme dédiée à l élite créative africaine.  Nous connectons les talents tech et créateurs de contenu aux opportunités mondiales de demain.
-            </p>
-            <div class="icon">
-              <a href="">  <i class="bi bi-instagram"></i>    </a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-              <a href=""> <i class="bi bi-tiktok"></i></a>
-              <a href=""> <i class="bi bi-snapchat"></i></a>
-            </div>
-          </div>
-            <!--liens utiles-->
-            <div  class="col-12">
-              <h2 class="CT-h2">liens utiles</h2>
-              <div class="">
-              <ul class="">
-             <li><a href="" class=""> À propos</a></li>
-             <li> <a href="" class="">Trouver un talent </a></li>
-              <li><a href="" class=""> Tarifs</a></li>
-             <li><a href="" class="">Devenir Freelance</a></li>
-              </ul>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button id="btn"><i class="bi bi-brightness-high-fill"></i></button>
+        <a href="index.html" class="CTA-btn">REJOINDRE</a>
+      </div>
+    </div>
+  </header>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero-p">Réponse sous 24h</span>
+      <h1>Contactez-nous</h1>
+      <p>Une question, un projet, un partenariat ? Notre équipe est là pour vous répondre.</p>
+    </div>
+  </section>
+  <section class="">
+    <div class="section-form ">
+      <!--formulaire de contact-->
+      <div class="col-12">
+        <h2 class="police-h2 ">Remplir leur coordonnée</h2>
+        <div class=" form rem">
+          <!--form-->
+          <form class="contac-form " id="contact-form">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input type="text" class="form-control  coleur" id="nom" required>
+                  <div class="invalid-feedback" id="error-nom">Veillez renseigner votre nom </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input type="text" class="form-control coleur" id="prenom" required>
+                  <div class="invalid-feedback" id="error-prenom">Veillez renseigner votre prenom </div>
+                </div>
               </div>
             </div>
-            <!--colonne3 :ressources-->
+            <div class="mb-3">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control coleur" id="inputEmail4" required>
+              <div class="invalid-feedback" id="error-email">Veillez saisir une adresse email valide </div>
+            </div>
+            <!--le sujet-->
+            <div class=" form-group-af mb-3">
+              <label for="inputState" class="form-label"> Sujet</label>
+              <select name="sujet" id="inputState" class="form-select" required>
+                <option value selected>choisir un sujet</option>
+                <option value="web">Développement Web</option>
+                <option value="web">Design UI/UX</option>
+                <option value="web">Marketing Digital </option>
+                <option value="web">Data& IA</option>
+                <option value="Tech"> Rédaction Tech</option>
+                <option value="Cloud"> DevOps & Cloud</option>
+              </select>
+            </div>
+            <!--message-->
+            <div class="form-group-af">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="message" id="message" rows="4" placeholder="votre message (min.20 caractéres)"
+                class="form-control coleur" required></textarea>
+              <div class="invalid-feedback" id="message-error"> votre message doit contenir au moins 20 Caractéres .
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+              <div class="invalid-feedback">vous devez accepter les conditions pour continuer </div>
+            </div>
             <div class="col-12">
-              <h2 class="CT-h2">Ressources</h2>
-              <ul>
-                <li class=""><a href="" class="">Blog créatif</a></li>
-                <li class=""><a href="" class="">Faq</a>
-                </li>
-                <li class=""><a href="" class="">centre d aide </a></li>
-                <li class=""><a href="" class="">partenaire</a></li>
-              </ul>
+              <button type="submit" class="btn  CTA-btn1">Envoyer</button>
             </div>
-           
+          </form>
+        </div>
+        <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert"> merci ! votre message a été
+          envoyé
+          avec succés à l équipe Afritalent.</div>
+      </div>
+      <!--nos bureau-->
+      <div class="">
+        <div class="">
+          <h3 class="police-h2">
+            Nos bureau
+          </h3>
+          <div class="rem">
+            <div class="">
+              <div><i class="bi bi-geo-alt icon"></i>
+                <p class="">Dakar , Pikine rue 54</p>
+                <p>Dakar,Fass</p>
+                <p>Thies </p>
+              </div>
+              <div><i class="bi bi-telephone-fill icon"></i>
+                <p class="">+221 33 491 00 00 </p>
+                <p>+221 77 800 00 00 </p>
+                <p>+221 77 700 00 00 </p>
+              </div>
+              <div><i class="bi bi-envelope-at icon"></i>
+                <p class="">hello521@Afritalent.com</p>
+                <p>hello534@Afritalent.com</p>
+                <p>hello501@Afritalent.com</p>
+              </div>
             </div>
-            </div>
-          <div class="centre">
-            <hr>
-           <p>&copy; 2026 Afritalaent . Tous droits reserves</p>
           </div>
-    </footer>
-     <BUtton class="back-to-top" id="backtotop" aria-label="retour en haut"><i class="bi bi-arrow-up"></i></BUtton>
-    <script src="bootstrap5/bootstrap-5.3.8-dist/bootstrap-5/js/bootstrap.bundle.js"></script>
-    <script src="js/main.js"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--google maps iframe-->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30866.58725955767!2d-17.3951428!3d14.750800699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2ssn!4v1781741313905!5m2!1sfr!2ssn"
+    width="2000" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
+  <!--footer-->
+  <footer class=" footer">
+    <div class=" container">
+      <div class=" footer1">
+        <!--clonne 1: AfriTalent -->
+        <div class="col-12 ">
+          <a class="navbar-brand" href="#"> <img src="image/logo1.jpg" class="navbar-brand im" alt="logo1">
+            AfriTalent</a>
+          <p class="hero-h2">La premiere plateforme dédiée à l élite créative africaine. Nous connectons les talents
+            tech et créateurs de contenu aux opportunités mondiales de demain.
+          </p>
+          <div class="icon">
+            <a href="https://www.instagram.com/mya_64456?igsh=MWk5bGZ3a2wxcm9waQ==&utm_source=ig_contact_invite"> <i
+                class="bi bi-instagram"></i> </a>
+            <a href="https://www.linkedin.com/in/amy-sylla-b53735407/"><i class="bi bi-linkedin"></i></a>
+            <a href=""> <i class="bi bi-tiktok"></i></a>
+            <a href="https://snapchat.com/t/RGjS8os4"> <i class="bi bi-snapchat"></i></a>
+          </div>
+        </div>
+        <!--liens utiles-->
+        <div class="col-12">
+          <h2 class="CT-h2">liens utiles</h2>
+          <div class="">
+            <ul class="">
+              <li><a href="about.html" class=""> À propos</a></li>
+              <li> <a href="freelances.html" class="">Trouver un talent </a></li>
+              <li><a href="tarifs.html" class=""> Tarifs</a></li>
+              <li><a href="contact.html" class="">Devenir Freelance</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--colonne3 :ressources-->
+        <div class="col-12">
+          <h2 class="CT-h2">Ressources</h2>
+          <ul>
+            <li class=""><a href="" class="">Blog créatif</a></li>
+            <li class=""><a href="" class="">Faq</a>
+            </li>
+            <li class=""><a href="" class="">centre d aide </a></li>
+            <li class=""><a href="" class="">partenaire</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="centre">
+      <hr>
+      <p id="copyright"></p>
+    </div>
+  </footer>
+  <BUtton class="back-to-top" id="backtotop" aria-label="retour en haut"><i class="bi bi-arrow-up"></i></BUtton>
+  <script src="bootstrap5/bootstrap-5.3.8-dist/bootstrap-5/js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

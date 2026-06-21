@@ -1,276 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afritalent</title>
     <link rel="stylesheet" href="bootstrap5/bootstrap-5.3.8-dist/bootstrap-5/css/bootstrap.css">
-       <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-        <header  class="navbar navbar-expand-lg bg">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="#"> <img src="image/logo1.jpg" class="navbar-brand" alt="logo1" width="50px"> AfriTalent</a>
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-       
-        <div class="collapse navbar-collapse" id="navbarNavDropdown" >
-      <ul class="navbar-nav">
-        <li class="nav-item">
+    <header class="navbar navbar-expand-lg bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="image/logo1.jpg" class="navbar-brand im" alt="logo1">
+                AfriTalent</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a  class="nav-link " aria-current="page" href="index.html">Acceuil</a> 
-        </li> 
-        <li class="nav-item">  
-        <a class="nav-link"  href="freelances.html">Freelance</a>
-         </li>
-        <li class="nav-item">
-        <a href="tarifs.html" class="nav-link" >Tarifs</a> 
-         </li>
-        <li class="nav-item">
-       <a href="about.html" class="nav-link" >A propos</a>
-        </li>
-        <li class="nav-item">
-       <a href="#" class="nav-link" >Blog</a>
-        </li>
-     <li class="nav-item">
-    <a href="contact.html" class="nav-link ">Contact</a>
-   </li>
-   </ul>
-   
-  </div>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-         <button id="btn" ><i class="bi bi-brightness-high-fill"></i></button>
-      <a href="contact.html" class="CTA-btn" type="button">REJOINDRE</a>
-       </div>
-     </div>
-  </header>  
-   <section class="page-hero">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+
+                        <a class="nav-link " aria-current="page" href="index.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="freelances.html">Freelance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tarifs.html" class="nav-link">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link ">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button id="btn"><i class="bi bi-brightness-high-fill"></i></button>
+                <a href="contact.html" class="CTA-btn">REJOINDRE</a>
+            </div>
+        </div>
+    </header>
+    <!--page-hero -->
+    <section class="page-hero">
         <div class="container">
-        <span class="page-hero-p"  >2 400+ profils vérifiés</span>
-        <h1>Nos Freelances</h1>
-        <p>Des experts africains qualifiés, disponibles pour vos projets dans tous les domaines du digital et de la création.</p>
-      </div>
-      </section>
-        <!--b  arre de filtres-->
-          <div  class="search-bar">
-           <span ><i class="bi bi-search"></i>
-            </span>
-           <input  type="search" class="search-input" placeholder="Rechercher un freelance,une compétence, un pays...">
-           <button class="CTA-btn">RECHERCHER</button>
+            <span class="page-hero-p">2 400+ profils vérifiés</span>
+            <h1>Nos Freelances</h1>
+            <p>Des experts africains qualifiés, disponibles pour vos projets dans tous les domaines du digital et de la
+                création.</p>
         </div>
-        <div class="search-btn" role="group" aria-label="filter par categorie">
-            <button class="bt active" data-filter="all">tous</button>
-            <button class="bt" data-filter="vidéaste">vidéaste & MONTEUSE</button>
-            <button class="bt" data-filter="TECH">Directrice technique</button>
-            <button class="bt" data-filter="vidéaste">UI/UX Desiner</button>
-            <button class="bt" data-filter="AI">Data & IA</button>
-            <button class="bt" data-filter="Developper">SeniorFullstack Developper</button>
-            <button class="bt" data-filter="Head">Head of trust & Safety</button>
-            <button class="bt" data-filter="Head">Head of Growth & Community</button>
-            <button class="bt" data-filter="vidéaste">Lead Product Designer</button>
-            <button class="bt" data-filter="AI">AI Solution Achitect</button>
-        </div>
-               <!--grille de profis-->
+    </section>
+    <!--b  arre de filtres-->
+    <div class="search-bar">
+        <span><i class="bi bi-search"></i>
+        </span>
+        <input type="search" class="search-input" placeholder="Rechercher un freelance,une compétence, un pays...">
+        <button class="CTA-btn">RECHERCHER</button>
+    </div>
+    <div class="search-btn" role="group" aria-label="filter par categorie">
+        <button class="bt active" data-filter="all">tous</button>
+        <button class="bt" data-filter="vidéaste">vidéaste & MONTEUSE</button>
+        <button class="bt" data-filter="TECH">Directrice technique</button>
+        <button class="bt" data-filter="vidéaste">UI/UX Desiner</button>
+        <button class="bt" data-filter="AI">Data & IA</button>
+        <button class="bt" data-filter="Developper">SeniorFullstack Developper</button>
+        <button class="bt" data-filter="Head">Head of trust & Safety</button>
+        <button class="bt" data-filter="Head">Head of Growth & Community</button>
+        <button class="bt" data-filter="vidéaste">Lead Product Designer</button>
+        <button class="bt" data-filter="AI">AI Solution Achitect</button>
+    </div>
+    <!--grille de profis-->
 
-        <section class =" container">
-            <h1 class="police-h2">les Profils</h1>
-            <div class="po">
+    <section class=" container">
+        <h1 class="police-h2">les Profils</h1>
+        <div class="po">
             <!--carte 1-->
             <div class="col">
                 <div class="card" data-category="vidéaste">
-                        <img src="image/moussa.jpg" alt="" class="card-img-top" height="400px">
-                         <div class="card-body">
-                        <h5 class="card-title">MOUSSA KANE</h5>
+                    <img src="image/moussa.jpg" alt="PHOTO DE MOUSSA" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="card-title">MOUSSA KANE</h2>
                         <p class="card-text">vidéaste & MONTEUSE</p>
-                        <p class="card-text">expert en storytelling visuel et montage dynamique pour réseaux sociaux.</p>
+                        <p class="card-text">expert en storytelling visuel et montage dynamique pour réseaux sociaux.
+                        </p>
                         <div class="">
-                        <span>35cfa/h</span>
-<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                    </div>
-                    <a href="" class="btn btn-primary">voire le profils</a>
+                            <span>35cfa/h</span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <a href="" class="btn btn-primary">voire le profils</a>
                     </div>
                 </div>
             </div>
             <!--carte 2-->
-                <div class="col">
-                    <div class="card"  data-category="TECH">
-                        <img src="image/seynabou.jpg" alt="" class="card-img-top" height="400px">
-                         <div class="card-body">
-                        <h5 class="card-title">Seynabou Sylla</h5>
+            <div class="col">
+                <div class="card" data-category="TECH">
+                    <img src="image/seynabou.jpg" alt="photo de seynabou " class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="card-title">Seynabou Sylla</h2>
                         <p class="card-text">Directrice technique </p>
-                        <p class="card-text">Architecture de l innovation ,elle pilote l intégration des tecnologies IA pour garantir un matching ultra-précils.</p>
+                        <p class="card-text">Architecture de l innovation ,elle pilote l intégration des tecnologies IA
+                            pour garantir un matching ultra-précils.</p>
                         <div class="">
-                        <span>35cfa/h</span>
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                    </div>
-                    <a href="" class="btn btn-primary">voire le profils</a>
+                            <span>35cfa/h</span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <a href="" class="btn btn-primary">voire le profils</a>
                     </div>
                 </div>
             </div>
             <!--carte 3-->
-                <div class="col">
-                    <div class="card"  data-category="vidéaste">
-                        <img src="image/amadou.jpg" alt=""class="card-img-top" height="400px">
-                         <div class="card-body">
-                        <h5 class="card-title">Amadou Ba</h5>
+            <div class="col">
+                <div class="card" data-category="vidéaste">
+                    <img src="image/amadou.jpg" alt="l image d amadou " class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="card-title">Amadou Ba</h2>
                         <p class="card-text">UI/UX Desiner</p>
-                        <p  class="card-text">Crée des interfancemoderness et intuitives pour vos applications mobiles.</p>
+                        <p class="card-text">Crée des interfancemoderness et intuitives pour vos applications mobiles.
+                        </p>
                         <div class="">
-                        <span>55cfa/h</span>
-                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                    </div>
-                    <a href="" class="btn btn-primary">voire le profils</a>
+                            <span>55cfa/h</span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <a href="" class="btn btn-primary">voire le profils</a>
                     </div>
                 </div>
             </div>
             <!--carte 4-->
-                <div class="col">
-                    <div class="card"  data-category="AI">
-                        <img src="image/coumba.jpg" alt=""class="card-img-top" height="400px">
-                         <div class="card-body">
-                        <h5 class="card-title">Coumba Kébé</h5>
+            <div class="col">
+                <div class="card" data-category="AI">
+                    <img src="image/coumba.jpg" alt="l image de coumba " class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="card-title">Coumba Sylla</h2>
                         <p class="card-text">Data & IA</p>
                         <p class="card-text">expert en algorithmes prédictifs et analyse stratégique.</p>
                         <div class="">
-                        <span>10cfa/h</span>
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                    </div>
-                    <a href="" class="btn btn-primary">voire le profils</a>
-
+                            <span>10cfa/h</span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <a href="" class="btn btn-primary">voire le profils</a>
                     </div>
                 </div>
             </div>
             <!--carte 5-->
-                <div class="col">
-                    <div class="card"  data-category="Developper">
-                        <img src="image/gervais 1.jpg" class="card-img-top" height="400px">
-                         <div class="card-body">
-                        <h5 class="card-title">gervais ngoma</h5>
+            <div class="col">
+                <div class="card" data-category="Developper">
+                    <img src="image/gervais_1.jpg" class="card-img-top"  alt="l image de moustapha">
+                    <div class="card-body">
+                        <h2 class="card-title">Moustapha sylla </h2>
                         <p class="card-text">SeniorFullstack Developper </p>
                         <p class="card-text">Architecte des solution web scalables et performante.</p>
                         <div class="">
-                        <span>35cfa/h</span>
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                    </div>
-                    <a href="" class="btn btn-primary">voire le Profile </a>
+                            <span>35cfa/h</span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <a href="" class="btn btn-primary">voire le Profile </a>
                     </div>
                 </div>
             </div>
             <!--carte 6-->
-                <div class="col">
-                    <div class="card"  data-category="Head">
-                        <img src="image/koudia.jpg" alt="" class="card-img-top" height="400px">
-                         <div class="card-body">
-                        <h5 class="card-title">khoudia diop</h5>
+            <div class="col">
+                <div class="card" data-category="Head">
+                    <img src="image/koudia.jpg" alt="l image de khoudia" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="card-title">khoudia diop</h2>
                         <p class="card-text">Head of trust & Safety </p>
                         <p class="card-text">Garante de la sécurité des transaction et de la fiabilité du réseau.</p>
                         <div class="">
-                        <span>40cfa/h</span>
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                    </div>
-                    <a href="" class="btn btn-primary">voire le profils</a>
+                            <span>40cfa/h</span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <a href="" class="btn btn-primary">voire le profils</a>
                     </div>
                 </div>
             </div>
             <!--carte 7-->
-                <div class="col">
-                    <div class="card"  data-category="Head">
-                        <img src="image/kiné1.jpg" alt="" class="card-img-top" >
-                         <div class="card-body">
-                        <h5 class="card-title">kiné bitaille</h5>
+            <div class="col">
+                <div class="card" data-category="Head">
+                    <img src="image/kiné1.jpg" alt=" l image de kine  " class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title">kiné Dia</h2>
                         <p class="card-text">Head of Growth & Community</p>
                         <p class="card-text">Propulse le rayonnrment d' AfriTalent à travers tout le continent.</p>
                         <div class="">
-                        <span>45cfa/h</span>
-  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                    </div>
-                    <a href="" class="btn btn-primary">voire le profils</a>
+                            <span>45cfa/h</span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <a href="" class="btn btn-primary">voire le profils</a>
                     </div>
                 </div>
             </div>
             <!--carte 8-->
-                <div class="col">
-                    <div class="card"  data-category="vidéaste">
-                        <img src="image/alioune.jpg" alt="" class="card-img-top" height="400px">
-                         <div class="card-body">
-                        <h5 class="card-title">Alioune Diakhaté</h5>
+            <div class="col">
+                <div class="card" data-category="vidéaste">
+                    <img src="image/alioune.jpg" alt=" l image d alioune diakhaté" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="card-title">Alioune Diakhaté</h2>
                         <p class="card-text">Lead Product Designer</p>
                         <p class="card-text">Façonne une interface intuitive et inspitante pour notre communauté.</p>
                         <div class="">
-                        <span>25cfa/h</span>
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                    </div>
-                    <a href="" class="btn btn-primary">voire le profils</a>
+                            <span>25cfa/h</span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <a href="" class="btn btn-primary">voire le profils</a>
                     </div>
                 </div>
             </div>
             <!--carte 9-->
-                <div class="col">
-                    <div class="card"  data-category="AI">
-                        <img src="image/modou.jpg" alt="" class="card-img-top" height="400px">
-                         <div class="card-body">
-                        <h5 class="card-title">Modou Séne</h5>
+            <div class="col">
+                <div class="card" data-category="AI">
+                    <img src="image/modou.jpg" alt="l image de modou sene" class="card-img-top" >
+                    <div class="card-body">
+                        <h2 class="card-title">Modou Séne</h2>
                         <p class="card-text">AI Solution Achitect </p>
                         <p class="card-text">Architecte des algorithmes de matching intelligent et prédictif.</p>
                         <div class="">
-                        <span>15cfa/h</span>
-                       <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                    </div>
-                    <a href="" class="btn btn-primary">voire le profils</a>
+                            <span>15cfa/h</span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <a href="" class="btn btn-primary">voire le profils</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-  <footer class=" footer">
-      <div class=" container">
-        <div class=" footer1">
-          <!--clonne 1: AfriTalent -->
-          <div class="col-12 ">
-            <a class="navbar-brand" href="#"> <img src="image/logo1.jpg" class="navbar-brand" alt="logo1" width="50px"> AfriTalent</a>
-            <p class="hero-h2">La premiere plateforme dédiée à l élite créative africaine.  Nous connectons les talents tech et créateurs de contenu aux opportunités mondiales de demain.
-            </p>
-            <div class="icon">
-              <a href="">  <i class="bi bi-instagram"></i>    </a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-              <a href=""> <i class="bi bi-tiktok"></i></a>
-              <a href=""> <i class="bi bi-snapchat"></i></a>
+    <!--footer-->
+    <footer class=" footer">
+        <div class=" container">
+            <div class=" footer1">
+                <!--clonne 1: AfriTalent -->
+                <div class="col-12 ">
+                    <a class="navbar-brand" href="#"> <img src="image/logo1.jpg" class="navbar-brand im" alt="logo1"
+                            > AfriTalent</a>
+                    <p class="hero-h2">La premiere plateforme dédiée à l élite créative africaine. Nous connectons les
+                        talents tech et créateurs de contenu aux opportunités mondiales de demain.
+                    </p>
+                    <div class="icon">
+                        <a
+                            href="https://www.instagram.com/mya_64456?igsh=MWk5bGZ3a2wxcm9waQ==&utm_source=ig_contact_invite">
+                            <i class="bi bi-instagram"></i> </a>
+                        <a href="https://www.linkedin.com/in/amy-sylla-b53735407/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.tiktok.com/@myachou745"> <i class="bi bi-tiktok"></i></a>
+                        <a href="https://snapchat.com/t/RGjS8os4"> <i class="bi bi-snapchat"></i></a>
+                    </div>
+                </div>
+                <!--liens utiles-->
+                <div class="col-12">
+                    <h2 class="CT-h2">liens utiles</h2>
+                    <div class="">
+                        <ul class="">
+                            <li><a href="about.html" class=""> À propos</a></li>
+                            <li> <a href="freelances.html" class="">Trouver un talent </a></li>
+                            <li><a href="tarifs.html" class=""> Tarifs</a></li>
+                            <li><a href="contact.html" class="">Devenir Freelance</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--colonne3 :ressources-->
+                <div class="col-12">
+                    <h2 class="CT-h2">Ressources</h2>
+                    <ul>
+                        <li class=""><a href="" class="">Blog créatif</a></li>
+                        <li class=""><a href="" class="">Faq</a>
+                        </li>
+                        <li class=""><a href="" class="">centre d aide </a></li>
+                        <li class=""><a href="" class="">partenaire</a></li>
+                    </ul>
+                </div>
+
             </div>
-          </div>
-            <!--liens utiles-->
-            <div  class="col-12">
-              <h2 class="CT-h2">liens utiles</h2>
-              <div class="">
-              <ul class="">
-             <li><a href="" class=""> À propos</a></li>
-             <li> <a href="" class="">Trouver un talent </a></li>
-              <li><a href="" class=""> Tarifs</a></li>
-             <li><a href="" class="">Devenir Freelance</a></li>
-              </ul>
-              </div>
-            </div>
-            <!--colonne3 :ressources-->
-            <div class="col-12">
-              <h2 class="CT-h2">Ressources</h2>
-              <ul>
-                <li class=""><a href="" class="">Blog créatif</a></li>
-                <li class=""><a href="" class="">Faq</a>
-                </li>
-                <li class=""><a href="" class="">centre d aide </a></li>
-                <li class=""><a href="" class="">partenaire</a></li>
-              </ul>
-            </div>
-           
-            </div>
-            </div>
-          <div class="centre">
+        </div>
+        <div class="centre">
             <hr>
-           <p>&copy; 2026 Afritalaent . Tous droits reserves</p>
-          </div>
+            <p id="copyright"></p>
+        </div>
     </footer>
- <BUtton class="back-to-top" id="backtotop" aria-label="retour en haut"><i class="bi bi-arrow-up"></i></BUtton>
+    <BUtton class="back-to-top" id="backtotop" aria-label="retour en haut"><i class="bi bi-arrow-up"></i></BUtton>
     <script src="bootstrap5/bootstrap-5.3.8-dist/bootstrap-5/js/bootstrap.bundle.js"></script>
-     <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
